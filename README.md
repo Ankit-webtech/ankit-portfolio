@@ -26,16 +26,6 @@ It showcases my skills, projects, and contact information in a modern and respon
 
 ---
 
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home Screenshot](./screenshots/home.png)
-
-### 💻 Projects Section
-![Projects Screenshot](./screenshots/projects.png)
-
----
-
 ## 📂 Project Structure
 
 
