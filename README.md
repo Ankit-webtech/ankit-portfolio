@@ -27,7 +27,10 @@ It showcases my skills, projects, and contact information in a modern and respon
 ---
 
 ## 📂 Project Structure
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ad5b5 (update)
   src/
 ┣ components/ # Reusable components (Footer, Navbar, etc.)
 ┣ pages/ # Main pages (About, Projects, Contact, Highlights)
