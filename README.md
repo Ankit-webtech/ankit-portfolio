@@ -28,6 +28,12 @@ It showcases my skills, projects, and contact information in a modern and respon
 
 ## 📂 Project Structure
 
+  src/
+┣ components/ # Reusable components (Footer, Navbar, etc.)
+┣ pages/ # Main pages (About, Projects, Contact, Highlights)
+┣ App.jsx # Main entry point
+┣ index.js # ReactDOM render
+┗ styles.css # TailwindCSS
 
 ---
 
