@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaAngular } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiJavascript } from "react-icons/si";
 
 export default function Highlights() {
@@ -8,8 +8,7 @@ export default function Highlights() {
     { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-3xl" /> },
     { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-400 text-3xl" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-3xl" /> },
-    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-3xl" /> },
-    { name: "Angular", icon: <FaAngular className="text-red-500 text-3xl" /> },
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-3xl" /> }
     { name: "HTML/CSS", icon: (
         <div className="flex space-x-2">
           <FaHtml5 className="text-orange-500 text-3xl" />
