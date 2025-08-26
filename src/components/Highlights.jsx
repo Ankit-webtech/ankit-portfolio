@@ -8,7 +8,7 @@ export default function Highlights() {
     { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-3xl" /> },
     { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-400 text-3xl" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-3xl" /> },
-    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-3xl" /> }
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-3xl" /> },
     { name: "HTML/CSS", icon: (
         <div className="flex space-x-2">
           <FaHtml5 className="text-orange-500 text-3xl" />
