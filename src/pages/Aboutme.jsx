@@ -96,7 +96,7 @@ const ProfileCard = () => {
       </h2>
 
       <p className="absolute left-8 right-8 text-white opacity-0 transition-all duration-700 group-hover:opacity-100 z-10 text-xl">
-        I am a passionate Full-Stack Developer who loves building modern, interactive, and user-friendly web applications.
+        I am a passionate Full-Stack Web Developer who loves building modern, interactive, and user-friendly web applications.
       </p>
 
       {/* Social Icons */}

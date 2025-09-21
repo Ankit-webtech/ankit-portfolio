@@ -83,7 +83,7 @@ export default function App() {
 
           {/* Resume Button */}
           <a
-            href="/Ankit-resume-july25.pdf"
+            href="/Ankit-resume-26.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-10 py-2 text-cyan-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
