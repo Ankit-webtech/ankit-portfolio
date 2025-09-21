@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Contact from "./components/Contact";
 import Footer from "./pages/Footer";
 
+
 export default function App() {
   return (
     <div className="relative min-h-screen text-white">
