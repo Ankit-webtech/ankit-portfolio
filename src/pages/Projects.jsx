@@ -4,9 +4,16 @@ import portfolioImg from "../assets/img-p.jpg"; // your portfolio image
 import landing from "../assets/landing-page.png";
 import guesthouse from "../assets/innobyte.png";
 import prernaF from "../assets/Prerna.png";
+import reviewx from "../assets/reviewx.png";
 
 export default function Projects() {
   const projects = [
+    {
+      title:"ReviewX",
+      desc:"AI-powered Code Review Tool",
+      link: "https://reviewx.vercel.app/",
+      image:reviewx,
+    },
     { 
       title: "Prerna Foundation", 
       desc: "NGO Website built with React + Tailwind.", 
