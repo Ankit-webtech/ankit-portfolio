@@ -29,7 +29,7 @@ const ProfileCard = () => {
       href: "https://instagram.com/ankiiitt____",
       svg: (
         <svg
-          className="p-1.5 w-9 h-9 btn-svg text-pink-600 hover:text-red-900"
+          className="p-1.5 w-9 h-9 btn-svg text-pink-700 hover:text-red-900"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -154,3 +154,6 @@ const StyleInjector = () => {
 };
 
 export default App;
+
+
+//////////////
