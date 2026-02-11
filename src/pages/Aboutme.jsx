@@ -80,44 +80,85 @@ const ProfileCard = () => {
   ];
 
   return (
-    <div className="group relative w-[20rem] h-[30rem] bg-gray-100 rounded-xl text-center transition-all duration-500 hover:shadow-2xl hover:bg-cyan-500">
-      <div className="h-2.5 w-4/5 mx-auto bg-cyan-500 rounded-b-3xl transition-all duration-300 group-hover:h-0"></div>
+//     <div className="group relative w-[20rem] h-[30rem] bg-gray-100 rounded-xl text-center transition-all duration-500 hover:shadow-2xl hover:bg-cyan-500">
+//       <div className="h-2.5 w-4/5 mx-auto bg-cyan-500 rounded-b-3xl transition-all duration-300 group-hover:h-0"></div>
 
-      <div className="flex justify-center items-center w-[70px] h-[70px] bg-gray-500 rounded-full mx-auto my-[30px] transition-all duration-500 text-sm group-hover:w-full group-hover:h-2/6 group-hover:rounded-t-xl group-hover:rounded-b-none group-hover:my-0 group-hover:bg-gray-100 relative z-10">
-        <span className="font-bold text-gray-100 group-hover:text-gray-900 transition-all duration-500">
-          Ankit
-        </span>
-      </div>
+//       <div className="flex justify-center items-center w-[70px] h-[70px] bg-gray-500 rounded-full mx-auto my-[30px] transition-all duration-500 text-sm group-hover:w-full group-hover:h-2/6 group-hover:rounded-t-xl group-hover:rounded-b-none group-hover:my-0 group-hover:bg-gray-100 relative z-10">
+//         <span className="font-bold text-gray-100 group-hover:text-gray-900 transition-all duration-500">
+//           Ankit
+//         </span>
+//       </div>
 
-      <h2 className="p-4 text-2xl transition-all duration-100 group-hover:opacity-0 absolute inset-x-0 bottom-4 text-gray-900">
-        Ankit
-        <br />
-        <span className="text-lg">Passionate</span>
-      </h2>
+//       <h2 className="p-4 text-2xl transition-all duration-100 group-hover:opacity-0 absolute inset-x-0 bottom-4 text-gray-900">
+//         Ankit
+//         <br />
+//         <span className="text-lg">Passionate</span>
+//       </h2>
 
-    <p className="absolute inset-0 flex items-center justify-center text-white text-center 
-opacity-0 translate-y-4 transition-all duration-700 
-group-hover:opacity-100 group-hover:translate-y-0 z-10 px-6 text-lg md:text-xl font-light tracking-wide">
-  Building modern, scalable, and interactive web experiences with the MERN stack.
-</p>
+//     <p className="absolute inset-0 flex items-center justify-center text-white text-center 
+// opacity-0 translate-y-4 transition-all duration-700 
+// group-hover:opacity-100 group-hover:translate-y-0 z-10 px-6 text-lg md:text-xl font-light tracking-wide">
+//   Building modern, scalable, and interactive web experiences with the MERN stack.
+// </p>
 
 
-      {/* Social Icons */}
-      <div className="absolute bottom-4 left-8 right-8 flex justify-center space-x-2 opacity-0 transition-all duration-700 group-hover:opacity-100 z-10">
-        {socialLinks.map((link, index) => (
-          <a
-            key={index}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button flex-center"
-          >
-            {link.svg}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
+//       {/* Social Icons */}
+//       <div className="absolute bottom-4 left-8 right-8 flex justify-center space-x-2 opacity-0 transition-all duration-700 group-hover:opacity-100 z-10">
+//         {socialLinks.map((link, index) => (
+//           <a
+//             key={index}
+//             href={link.href}
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="button flex-center"
+//            >
+//             {link.svg}
+//           </a>
+//         ))}
+//       </div>
+//     </div>
+  // );
+// }; 
+
+    <div className="group relative w-[20rem] h-[30rem] bg-gray-100 rounded-xl text-center overflow-hidden transition-all duration-500 hover:shadow-2xl">
+
+  {/* Top Bar */}
+  <div className="h-2.5 w-4/5 mx-auto bg-cyan-500 rounded-b-3xl transition-all duration-300 group-hover:h-0"></div>
+
+  {/* Profile Header */}
+  <div className="flex flex-col items-center justify-center w-full h-2/6 bg-gray-200 transition-all duration-500 group-hover:h-1/3">
+    <h2 className="text-2xl font-semibold text-gray-900">
+      Ankit Nagar
+    </h2>
+    <p className="text-sm text-gray-500">
+      Full-Stack Developer
+    </p>
+  </div>
+
+  {/* Bottom Section */}
+  <div className="absolute bottom-0 left-0 w-full h-4/6 bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center px-6 opacity-0 translate-y-6 transition-all duration-700 group-hover:opacity-100 group-hover:translate-y-0">
+    <p className="text-white text-center text-lg font-light leading-relaxed">
+      Building modern, scalable, and interactive web experiences
+      <span className="font-semibold"> with the MERN stack.</span>
+    </p>
+  </div>
+
+  {/* Social Icons */}
+  <div className="absolute bottom-4 left-0 w-full flex justify-center space-x-3 opacity-0 transition-all duration-700 group-hover:opacity-100">
+    {socialLinks.map((link, index) => (
+      <a
+        key={index}
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button flex-center"
+      >
+        {link.svg}
+      </a>
+    ))}
+  </div>
+</div>
+);
 };
 
 // Custom CSS
