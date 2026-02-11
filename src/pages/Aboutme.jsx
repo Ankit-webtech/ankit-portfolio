@@ -95,9 +95,12 @@ const ProfileCard = () => {
         <span className="text-lg">Passionate</span>
       </h2>
 
-      <p className="absolute left-8 right-8 text-white opacity-0 transition-all duration-700 group-hover:opacity-100 z-10 text-xl">
-        I am a passionate Full-Stack Web Developer who loves building modern, interactive, and user-friendly web applications.
-      </p>
+    <p className="absolute inset-0 flex items-center justify-center text-white text-center 
+opacity-0 translate-y-4 transition-all duration-700 
+group-hover:opacity-100 group-hover:translate-y-0 z-10 px-6 text-lg md:text-xl font-light tracking-wide">
+  Building modern, scalable, and interactive web experiences with the MERN stack.
+</p>
+
 
       {/* Social Icons */}
       <div className="absolute bottom-4 left-8 right-8 flex justify-center space-x-2 opacity-0 transition-all duration-700 group-hover:opacity-100 z-10">
