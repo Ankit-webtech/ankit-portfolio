@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Highlights from "./components/Highlights";
 import Contact from "./components/Contact";
-import Aboutme from "./pages/Aboutme";
+import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";
 
@@ -15,14 +15,14 @@ const GlobalStyle = () => (
    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap');
 
     :root {
-      --red:    #4f0242;
-      --red2:   #028ffa;
+      --crimson:    #4f0242;
+      --crimson2:   #da20e3;
       --black:  #0a0a0a;
       --g1:     #141414;
       --g2:     #1c1c1c;
       --border: #222222;
-      --white:  #f0eeeb;
-      --muted:  #888888;
+      --white:  #888785;
+      --muted:  #481919;
       --dim:    #444444;
     }
 
@@ -34,10 +34,10 @@ const GlobalStyle = () => (
       font-family: 'Jost', sans-serif;              
       fontFamily: "'Cormorant Garamond', serif"             
     }
-    ::selection { background:var(--red); color:#fff; }
+    ::selection { background:var(--crimson); color:#fff; }
     ::-webkit-scrollbar { width:4px; }
     ::-webkit-scrollbar-track { background:var(--black); }
-    ::-webkit-scrollbar-thumb { background:var(--red); border-radius:2px; }
+    ::-webkit-scrollbar-thumb { background:var(--crimson); border-radius:2px; }
 
     body::before {
       content:''; position:fixed; inset:0;
@@ -72,17 +72,17 @@ const GlobalStyle = () => (
       font-weight:500; letter-spacing:.04em; padding:.35rem .9rem;
       border-radius:100px; transition:color .2s,background .2s;
     }
-    .nl:hover,.nl.active { color:#fff; background:var(--red); }
+    .nl:hover,.nl.active { color:#fff; background:var(--crimson); }
 
-    .btn-red {
+    .btn-crimson {
       display:inline-flex; align-items:center; gap:8px;
-      padding:.7rem 1.8rem; background:var(--red); color:#fff;
+      padding:.7rem 1.8rem; background:var(--crimson); color:#fff;
       border:none; border-radius:100px; font-family:inherit;
       font-size:.84rem; font-weight:600; letter-spacing:.04em;
       cursor:pointer; text-decoration:none;
       transition:transform .2s,box-shadow .2s;
     }
-    .btn-red:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(230,57,70,.4); }
+    .btn-crimson:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(230,57,70,.4); }
 
     .btn-ghost {
       display:inline-flex; align-items:center; gap:8px;
@@ -108,13 +108,13 @@ const GlobalStyle = () => (
       color:var(--muted); text-decoration:none; font-size:1.1rem;
       transition:all .2s;
     }
-    .soc:hover { border-color:var(--red); color:#fff; background:var(--red); transform:translateY(-3px); }
+    .soc:hover { border-color:var(--crimson); color:#fff; background:var(--crimson); transform:translateY(-3px); }
 
-    .red-card {
+    .crimson-card {
       background:var(--g1); border:1px solid var(--border); border-radius:20px;
       transition:border-color .3s,transform .3s,box-shadow .3s;
     }
-    .red-card:hover {
+    .crimson-card:hover {
       border-color:rgba(230,57,70,.3); transform:translateY(-4px);
       box-shadow:0 20px 50px rgba(0,0,0,.6);
     }
@@ -163,7 +163,7 @@ function Navbar() {
 
   const links = [
     { id: "home", label: "Home" },
-    { id: "aboutme", label: "About" },
+    { id: "aboutMe", label: "About" },
     { id: "highlights", label: "Stack" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
@@ -207,7 +207,7 @@ function Navbar() {
         ))}
         <Link
           to="/auth"
-          className="btn-red"
+          className="btn-crimson"
           style={{ fontSize: ".75rem", padding: ".4rem 1rem", marginLeft: 8 }}
         >
           Demo Login
@@ -407,25 +407,18 @@ function Hero() {
               letterSpacing: ".1em",
             }}
           >
-<<<<<<< HEAD
-            About Me
-          </a>
+            AVAILABLE FOR WORK
+          </span>
 
           {/* Resume Button */}
-          <a
+          {/* <a
             href="/Ankit-Nagar-Resume-3-26.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-10 py-2 text-cyan-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
-            hover:font-bold  
-          hover:border-cyan-500 hover:text-white hover:shadow-cyan-500/50 hover:shadow-lg focus:outline-none"
+            className="px-10 py-2 text-crimson-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-crimson hover:scale-105 hover:font-bold hover:border-crimson-500 hover:text-crimson hover:shadow-crimson-500/50 hover:shadow-lg focus:outline-none"
           >
             Resume
-          </a>
-=======
-            AVAILABLE FOR WORK
-          </span>
->>>>>>> 1ef2546 (Initial commit)
+          </a> */}
         </div>
       </div>
 
@@ -440,7 +433,7 @@ function Hero() {
           lineHeight: 1.0,
           letterSpacing: "-.02em",
           maxWidth: 900,
-          color: "#3e3243",
+          color: "gray",
         }}
       >
         Building{" "}
@@ -480,7 +473,7 @@ function Hero() {
           justifyContent: "center",
         }}
       >
-        <a href="#projects" className="btn-red">
+        <a href="#projects" className="btn-crimson">
           View Projects →
         </a>
         <a
@@ -576,6 +569,7 @@ export default function Home() {
       <CursorDot />
       <AnimatedBackground />
       <Navbar />
+
       <main>
         <Hero />
         <MarqueeStrip />
@@ -584,46 +578,11 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
+
       <Footer />
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -658,11 +617,11 @@ export default function Home() {
 
 //       {/* Navbar */}
 //       <nav className="fixed top-0 left-0 w-full flex justify-center py-4 z-50">
-//         <ul className="flex space-x-8 bg-white backdrop-blur-md px-6 py-3 rounded-full text-cyan-500 text-lg shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-cyan-500 hover:text-white hover:shadow-cyan-500/50 hover:shadow-lg focus:outline-none">
+//         <ul className="flex space-x-8 bg-white backdrop-blur-md px-6 py-3 rounded-full text-crimson-500 text-lg shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-crimson-500 hover:text-white hover:shadow-crimson-500/50 hover:shadow-lg focus:outline-none">
 //           <li>
 //             <a
 //               href="#home"
-//               className="text-gray-600 font-medium hover:text-cyan-400 transition"
+//               className="text-gray-600 font-medium hover:text-crimson-400 transition"
 //             >
 //               👤
 //             </a>
@@ -670,7 +629,7 @@ export default function Home() {
 //           <li>
 //             <a
 //               href="#highlights"
-//               className="text-gray-600 font-medium hover:text-cyan-400 transition"
+//               className="text-gray-600 font-medium hover:text-crimson-400 transition"
 //             >
 //               Highlights
 //             </a>
@@ -678,7 +637,7 @@ export default function Home() {
 //           <li>
 //             <a
 //               href="#projects"
-//               className="text-gray-600 font-medium hover:text-cyan-400 transition"
+//               className="text-gray-600 font-medium hover:text-crimson-400 transition"
 //             >
 //               Projects
 //             </a>
@@ -686,7 +645,7 @@ export default function Home() {
 //           <li>
 //             <a
 //               href="#contact"
-//               className="text-gray-600 font-medium hover:text-cyan-400 transition"
+//               className="text-gray-600 font-medium hover:text-crimson-400 transition"
 //             >
 //               Contact
 //             </a>
@@ -711,7 +670,7 @@ export default function Home() {
 //           Code is my craft ,{" "}
 //           <Link
 //             to="/auth"
-//             className="text-cyan-400 underline hover:text-cyan-600 text-sm"
+//             className="text-crimson-400 underline hover:text-crimson-600 text-sm"
 //           >
 //             Demo Login
 //           </Link>
@@ -724,9 +683,9 @@ export default function Home() {
 //           {/* About Me Button */}
 //           <a
 //             href="#aboutme"
-//             className="px-8 py-2 text-cyan-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
+//             className="px-8 py-2 text-crimson-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
 //             hover:font-bold
-//             hover:border-cyan-500 hover:text-white hover:shadow-cyan-500/50 hover:shadow-lg focus:outline-none"
+//             hover:border-crimson-500 hover:text-white hover:shadow-crimson-500/50 hover:shadow-lg focus:outline-none"
 //           >
 //             About Me
 //           </a>
@@ -736,9 +695,9 @@ export default function Home() {
 //             href="/Ankit-resume-2026(1).pdf"
 //             target="_blank"
 //             rel="noopener noreferrer"
-//             className="px-10 py-2 text-cyan-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
+//             className="px-10 py-2 text-crimson-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
 //             hover:font-bold
-//           hover:border-cyan-500 hover:text-white hover:shadow-cyan-500/50 hover:shadow-lg focus:outline-none"
+//           hover:border-crimson-500 hover:text-white hover:shadow-crimson-500/50 hover:shadow-lg focus:outline-none"
 //           >
 //             Resume
 //           </a>
