@@ -26,9 +26,9 @@ export default function AnimatedBackground() {
       },
     },
     particles: {
-      color: { value: ["#4f0242", "#ff6b6b", "#888888", "#ffffff"] },
+      color: { value: ["#8106a7", "#ff6b6b", "#888888", "#ffffff"] },
       links: {
-        color: "#4f0242",
+        color: "#f8ed72",
         distance: 130, enable: true, opacity: 0.07, width: 1,
       },
       move: {

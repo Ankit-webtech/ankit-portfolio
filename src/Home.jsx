@@ -78,11 +78,11 @@ const GlobalStyle = () => (
       display:inline-flex; align-items:center; gap:8px;
       padding:.7rem 1.8rem; background:var(--crimson); color:#fff;
       border:none; border-radius:100px; font-family:inherit;
-      font-size:.84rem; font-weight:600; letter-spacing:.04em;
+      font-size:.64rem; font-weight:600; letter-spacing:.04em;
       cursor:pointer; text-decoration:none;
       transition:transform .2s,box-shadow .2s;
     }
-    .btn-crimson:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(230,57,70,.4); }
+    .btn-crimson:hover { transform:translateY(-2px);  box-shadow:0 8px 30px rgba(34, 6, 29, 0.62);   }
 
     .btn-ghost {
       display:inline-flex; align-items:center; gap:8px;
@@ -115,7 +115,7 @@ const GlobalStyle = () => (
       transition:border-color .3s,transform .3s,box-shadow .3s;
     }
     .crimson-card:hover {
-      border-color:rgba(230,57,70,.3); transform:translateY(-4px);
+      border-color:rgba(230, 57, 213, 0.3); transform:translateY(-4px);
       box-shadow:0 20px 50px rgba(0,0,0,.6);
     }
   `}</style>
@@ -154,7 +154,7 @@ function Navbar() {
         }),
       { threshold: 0.4 },
     );
-    ["home", "AboutMe", "highlights", "projects", "contact"].forEach((id) => {
+    ["home", "aboutMe", "highlights", "projects", "contact"].forEach((id) => {
       const el = document.getElementById(id);
       if (el) obs.observe(el);
     });
@@ -163,7 +163,7 @@ function Navbar() {
 
   const links = [
     { id: "home", label: "Home" },
-    { id: "AboutMe", label: "About" },
+    { id: "aboutMe", label: "About" },
     { id: "highlights", label: "Stack" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
@@ -205,15 +205,10 @@ function Navbar() {
             {l.label}
           </a>
         ))}
-        <Link
-          to="/auth"
-          className="btn-crimson"
-          style={{ fontSize: ".75rem", padding: ".4rem 1rem", marginLeft: 8 }}
-        >
-          Demo Login
-        </Link>
+      
       </div>
     </nav>
+    
   );
 }
 
@@ -288,8 +283,11 @@ function MarqueeStrip() {
               }}
             />
             {t}
+            
           </span>
+          
         ))}
+        
       </div>
     </div>
   );
@@ -377,7 +375,9 @@ function Hero() {
         }}
       />
 
+
       <div style={{ animation: "fadeUp .6s ease both" }}>
+        
         <div
           style={{
             display: "inline-flex",
@@ -385,30 +385,38 @@ function Hero() {
             gap: 8,
             padding: "6px 14px",
             marginBottom: 32,
-            background: "rgba(230,57,70,0.08)",
-            border: "1px solid rgba(230,57,70,0.25)",
+            background: "rgba(93, 2, 92, 0.07)",
+            border: "1px solid rgba(239, 20, 255, 0.34)",
             borderRadius: 100,
           }}
         >
+          
           <span
             style={{
               width: 7,
               height: 7,
               borderRadius: "50%",
-              background: "#4f0242",
+              background: "#6c0598",
               animation: "pulse 1.6s ease-out infinite",
             }}
           />
           <span
             style={{
               fontSize: ".72rem",
-              color: "#4f0242",
+              color: "#790065",
               fontWeight: 600,
               letterSpacing: ".1em",
             }}
           >
             AVAILABLE FOR WORK
           </span>
+          <Link
+          to="/auth"
+          className="btn-crimson"
+          style={{ fontSize: ".75rem", padding: ".4rem 1rem", marginLeft: 8 }}
+        >
+          Demo Login
+        </Link>
 
           {/* Resume Button */}
           {/* <a
@@ -420,7 +428,9 @@ function Hero() {
             Resume
           </a> */}
         </div>
+        
       </div>
+      
 
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
@@ -682,7 +692,7 @@ export default function Home() {
 //         <div className="mt-6 flex space-x-4">
 //           {/* About Me Button */}
 //           <a
-//             href="#AboutMe"
+//             href="#aboutme"
 //             className="px-8 py-2 text-crimson-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
 //             hover:font-bold
 //             hover:border-crimson-500 hover:text-white hover:shadow-crimson-500/50 hover:shadow-lg focus:outline-none"

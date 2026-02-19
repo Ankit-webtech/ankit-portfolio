@@ -86,14 +86,14 @@ export default function Contact() {
                 type="text" placeholder="Your Name" required
                 value={name} onChange={(e) => setName(e.target.value)}
                 style={inputStyle}
-                onFocus={(e)  => (e.target.style.borderColor = "rgba(230,57,70,.55)")}
+                onFocus={(e)  => (e.target.style.borderColor = "rgba(230, 57, 184, 0.55)")}
                 onBlur={(e)   => (e.target.style.borderColor = "#222")}
               />
               <input
                 type="email" placeholder="Email Address" required
                 value={email} onChange={(e) => setEmail(e.target.value)}
                 style={inputStyle}
-                onFocus={(e)  => (e.target.style.borderColor = "rgba(230,57,70,.55)")}
+                onFocus={(e)  => (e.target.style.borderColor = "rgba(252, 18, 232, 0.55)")}
                 onBlur={(e)   => (e.target.style.borderColor = "#222")}
               />
               <textarea
@@ -101,7 +101,7 @@ export default function Contact() {
                 rows={5} required
                 value={message} onChange={(e) => setMessage(e.target.value)}
                 style={inputStyle}
-                onFocus={(e)  => (e.target.style.borderColor = "rgba(230,57,70,.55)")}
+                onFocus={(e)  => (e.target.style.borderColor = "rgba(202, 6, 176, 0.55)")}
                 onBlur={(e)   => (e.target.style.borderColor = "#222")}
               />
               <button
@@ -116,7 +116,7 @@ export default function Contact() {
                   letterSpacing: ".04em", cursor: "pointer",
                   transition: "transform .2s,box-shadow .2s",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 8px 30px rgba(230,57,70,.4)"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 8px 30px rgba(230, 57, 164, 0.4)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="none"; }}
               >
                 Send via WhatsApp →
