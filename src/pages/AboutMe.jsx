@@ -12,7 +12,7 @@ const socialLinks = [
 export default function AboutMe() {
   return (
     <section
-      id="aboutMe"
+      id="AboutMe"
       style={{
         minHeight: "100vh",
         display: "flex",

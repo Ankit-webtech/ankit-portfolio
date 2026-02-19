@@ -154,7 +154,7 @@ function Navbar() {
         }),
       { threshold: 0.4 },
     );
-    ["home", "aboutme", "highlights", "projects", "contact"].forEach((id) => {
+    ["home", "AboutMe", "highlights", "projects", "contact"].forEach((id) => {
       const el = document.getElementById(id);
       if (el) obs.observe(el);
     });
@@ -163,7 +163,7 @@ function Navbar() {
 
   const links = [
     { id: "home", label: "Home" },
-    { id: "aboutMe", label: "About" },
+    { id: "AboutMe", label: "About" },
     { id: "highlights", label: "Stack" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
@@ -573,7 +573,7 @@ export default function Home() {
       <main>
         <Hero />
         <MarqueeStrip />
-        <Aboutme />
+        <AboutMe />
         <Highlights />
         <Projects />
         <Contact />
@@ -597,7 +597,7 @@ export default function Home() {
 // import React from "react";
 // import AnimatedBackground from "./components/AnimatedBackground";
 // import { motion } from "framer-motion";
-// import Aboutme from "./pages/Aboutme";
+// import AboutMe from "./pages/AboutMe";
 // import Highlights from "./components/Highlights";
 // import Projects from "./pages/Projects";
 // import Contact from "./components/Contact";
@@ -682,7 +682,7 @@ export default function Home() {
 //         <div className="mt-6 flex space-x-4">
 //           {/* About Me Button */}
 //           <a
-//             href="#aboutme"
+//             href="#AboutMe"
 //             className="px-8 py-2 text-crimson-500 text-lg rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105
 //             hover:font-bold
 //             hover:border-crimson-500 hover:text-white hover:shadow-crimson-500/50 hover:shadow-lg focus:outline-none"
@@ -705,7 +705,7 @@ export default function Home() {
 //       </div>
 
 //       {/* Sections */}
-//       <Aboutme />
+//       <AboutMe />
 //       <Highlights />
 //       <Projects />
 //       <Contact />
