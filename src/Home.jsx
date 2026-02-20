@@ -15,14 +15,14 @@ const GlobalStyle = () => (
    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap');
 
     :root {
-      --crimson:    #4f0242;
+      --crimson:    #58034a;
       --crimson2:   #da20e3;
-      --black:  #0a0a0a;
+      --black:  #0c0c0c;
       --g1:     #141414;
       --g2:     #1c1c1c;
       --border: #222222;
       --white:  #888785;
-      --muted:  #481919;
+      --muted:  gray;
       --dim:    #444444;
     }
 
