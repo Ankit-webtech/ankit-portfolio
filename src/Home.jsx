@@ -487,7 +487,7 @@ function Hero() {
           View Projects →
         </a>
         <a
-          href="/Ankit-resume-2026(1).pdf"
+          href="/Ankit-Nagar-Resume-2_26.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-ghost"
