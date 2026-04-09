@@ -42,13 +42,13 @@ export default function AboutMe() {
           fontSize: "clamp(2.2rem,5vw,4rem)",
           fontWeight: 700,
           lineHeight: 1.1,
-          color: "gray",
+          color: "white",
           textAlign: "center",
           marginBottom: 60,
         }}
       >
         The person behind{" "}
-        <em style={{ fontStyle: "italic", color: "#4f0242" }}>
+        <em style={{ fontStyle: "italic", color: "#680357" }}>
           the code
         </em>
       </h2>

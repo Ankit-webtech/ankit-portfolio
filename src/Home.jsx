@@ -17,7 +17,7 @@ const GlobalStyle = () => (
     :root {
       --crimson:    #58034a;
       --crimson2:   #da20e3;
-      --black:  #0c0c0c;
+      --black:  #141414;
       --g1:     #141414;
       --g2:     #1c1c1c;
       --border: #222222;
@@ -396,14 +396,14 @@ function Hero() {
               width: 7,
               height: 7,
               borderRadius: "50%",
-              background: "#6c0598",
+              background: "#ebccf8",
               animation: "pulse 1.6s ease-out infinite",
             }}
           />
           <span
             style={{
               fontSize: ".72rem",
-              color: "#790065",
+              color: "#b50397",
               fontWeight: 600,
               letterSpacing: ".1em",
             }}
@@ -443,11 +443,11 @@ function Hero() {
           lineHeight: 1.0,
           letterSpacing: "-.02em",
           maxWidth: 900,
-          color: "gray",
+          color: "white",
         }}
       >
         Building{" "}
-        <em style={{ fontStyle: "italic", color: "#4f0242" }}>Modern</em> Web
+        <em style={{ fontStyle: "italic", color: "#6a0259" }}>Modern</em> Web
         <br />
         Experiences
       </motion.h1>

@@ -64,9 +64,9 @@ export default function Contact() {
 
               {/* Details */}
               {[
-                { icon: "📍", label: "Location",      value: "India"           },
-                { icon: "⚡", label: "Response Time", value: "Within 24 hours" },
-                { icon: "💬", label: "WhatsApp",      value: "+91 96174 86475" },
+                { icon: "◕", label: "Location",      value: "India"           },
+                { icon: "⏱", label: "Response Time", value: "Within 24 hours" },
+                { icon: "→", label: "WhatsApp",      value: "+91 96174 86475" },
               ].map((item) => (
                 <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 18 }}>
                   <span style={{ fontSize: "1.2rem" }}>{item.icon}</span>
