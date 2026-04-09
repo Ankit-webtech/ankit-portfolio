@@ -106,9 +106,9 @@ export default function AnimatedBackground() {
         path.moveTo(0, H);
         for (let x = 0; x <= W; x += 4) {
           const wave =
-            Math.sin(x * a.freq + t * a.speed * 200 + i * 1.3) * a.amp +
-            Math.sin(x * a.freq * 2.3 + t * a.speed * 50 + i) * (a.amp * 0.4) +
-            Math.sin(x * a.freq * 0.7 + t * a.speed * 700 + i * 2.1) * (a.amp * 0.25);
+            Math.sin(x * a.freq + t * a.speed * 80 + i * 1.3) * a.amp +
+            Math.sin(x * a.freq * 2.3 + t * a.speed * 30 + i) * (a.amp * 0.4) +
+            Math.sin(x * a.freq * 0.7 + t * a.speed * 300 + i * 2.1) * (a.amp * 0.25);
           path.lineTo(x, baseY + wave);
         }
         path.lineTo(W, H);
@@ -129,9 +129,9 @@ export default function AnimatedBackground() {
         shimmerPath.moveTo(0, H);
         for (let x = 0; x <= W; x += 4) {
           const wave =
-            Math.sin(x * a.freq + t * a.speed * 600 + i * 1.3) * a.amp +
-            Math.sin(x * a.freq * 2.3 + t * a.speed * 400+ i) * (a.amp * 0.4) +
-            Math.sin(x * a.freq * 0.7 + t * a.speed * 1000 + i * 2.1) * (a.amp * 0.25);
+            Math.sin(x * a.freq + t * a.speed * 300 + i * 1.3) * a.amp +
+            Math.sin(x * a.freq * 2.3 + t * a.speed * 100+ i) * (a.amp * 0.4) +
+            Math.sin(x * a.freq * 0.7 + t * a.speed * 300 + i * 2.1) * (a.amp * 0.25);
           shimmerPath.lineTo(x, baseY + wave - 6);
         }
         shimmerPath.lineTo(W, H);
